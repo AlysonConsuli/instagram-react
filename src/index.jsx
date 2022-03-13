@@ -1,20 +1,19 @@
 import ReactDOM from 'react-dom';
-import {Topo} from './componentes/Topo';
-import {Stories} from './componentes/Stories';
-import {Publicacoes} from './componentes/Publicacoes';
-import { Sidebar } from './componentes/Sidebar';
-import { FooterMobile } from './componentes/FooterMobile';
-
+import { Header } from './components/Header';
+import { Stories } from './components/Stories';
+import { Posts } from './components/Posts';
+import { Sidebar } from './components/Sidebar';
+import { FooterMobile } from './components/FooterMobile';
 
 function App() {
     return (
         <div>
-            <Topo />
-            <div className="conteudo">
-                <div className="conteudo-principal">
+            <Header />
+            <div className="content">
+                <main>
                     <Stories />
-                    <Publicacoes />
-                </div>
+                    <Posts />
+                </main>
                 <Sidebar />
             </div>
             <FooterMobile />
@@ -23,5 +22,4 @@ function App() {
 }
 
 const root = document.querySelector('.root')
-
 ReactDOM.render(<App />, root)

@@ -1,10 +1,10 @@
 import { User } from "./User"
-import { Sugestao } from "./Sugestao"
+import { Suggestion } from "./Suggestion"
 
 export const Sidebar = () => {
     const user = { img: "img/eu.jpeg", nickname: "alysonconsuli", name: "Alyson" }
     const { img: imgUser, nickname, name: nameUser } = user
-    const sugestoes = [
+    const suggestions = [
         { img: "img/pior.jpg", name: "seficarputoepior" },
         { img: "img/xbox.png", name: "Xbox" },
         { img: "img/neymar.png", name: "Neymar" },
@@ -13,36 +13,24 @@ export const Sidebar = () => {
     ]
 
     return (
-        <div className="sidebar">
+        <aside>
             <User img={imgUser} nickname={nickname} name={nameUser} />
-            <div className="sep">
+            <div className="titleSuggestions">
                 <p>Sugestões para você</p>
                 <p>Ver tudo</p>
             </div>
-            <div className="sugestoes">
-                {sugestoes.map(sugestao => {
-                    const { img, name } = sugestao
-                    return <Sugestao img={img} name={name} />
+            <div className="suggestions">
+                {suggestions.map(suggestion => {
+                    const { img, name } = suggestion
+                    return <Suggestion img={img} name={name} />
                 })}
-                <div className="direitos">
+                <div className="copyright">
                     <h4>Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade •
                         Termos • Localizações • Contas mais relevantes • Hashtags •
                         Idioma</h4>
                     <h4>© 2021 INSTAGRAM DO FACEBOOK</h4>
                 </div>
             </div>
-        </div>
+        </aside>
     )
 }
-
-
-/*< div className = "sugestao margin-33" >
-    <div className="flex">
-        <img src="img/marvel.jpg" />
-        <div className="seguidores">
-            <h2>Marvel</h2>
-            <p>Novo no Instagram</p>
-        </div>
-    </div>
-    <h3>Seguir</h3>
-</div >*/

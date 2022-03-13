@@ -7,8 +7,7 @@ body {
     background-color: #FAFAFA;
 }
 
-
-.topo-total {
+header {
     width: 100%;
     height: 54px;
     background-color: #FFFFFF;
@@ -17,7 +16,7 @@ body {
     z-index: 2;
 }
 
-.topo {
+.boxHeader {
     width: 935px;
     height: 54px;
     display: flex;
@@ -31,7 +30,7 @@ body {
     border-bottom: 1px solid #DBDBDB;
 }
 
-.separacao {
+.bar {
     width: 1px;
     height: 22px;
     background-color: #dbdbdb;
@@ -50,7 +49,7 @@ body {
     padding: 16px 0;
 }
 
-.logo-desk {
+.logoDesktop {
     width: 103px;
     height: 29px;
     background-color: #ffffff;
@@ -58,22 +57,15 @@ body {
     margin-bottom: 10px;
 }
 
-.pesquisar {
+.search {
     width: 215px;
     height: 28px;
     background-color: #FAFAFA;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
 }
 
-/*.pesquisar p {
-    color: #979797;
-}*/
-
-::placeholder{
+::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: 14.06px;
@@ -81,7 +73,7 @@ body {
     text-align: center;
 }
 
-.icones {
+.icons {
     height: 100%;
     width: 144px;
     background-color: #FFFFFF;
@@ -94,7 +86,7 @@ ion-icon {
     font-size: 22px;
 }
 
-.conteudo {
+.content {
     width: 935px;
     margin: 0 auto;
     display: flex;
@@ -102,7 +94,7 @@ ion-icon {
     gap: 28px;
 }
 
-.container-stories {
+.containerStories {
     width: 614px;
     height: 118px;
     margin-top: 88px;
@@ -116,13 +108,13 @@ ion-icon {
     border-radius: 3px;
 }
 
-.container-stories img {
+.containerStories img {
     width: 56px;
     height: 56px;
     border-radius: 28px;
 }
 
-.sobrescrever {
+.imgStorie {
     background-image: url("stories.jpg");
     background-size: contain;
     width: 66px;
@@ -133,7 +125,7 @@ ion-icon {
     align-items: center;
 }
 
-.box-stories {
+.boxStorie {
     width: 66px;
     height: 86px;
     background-color: #FFFFFF;
@@ -144,7 +136,7 @@ ion-icon {
     margin-left: 14px;
 }
 
-.container-stories .box-stories:first-child {
+.containerStories .boxStorie:first-child {
     margin-left: 18px;
 }
 
@@ -154,7 +146,7 @@ p {
     line-height: 14.06px;
 }
 
-.sidebar {
+aside {
     width: 293px;
     height: 446px;
     background-color: #FAFAFA;
@@ -163,14 +155,14 @@ p {
     right: 0;
 }
 
-.primeiro-sidebar {
+.user {
     height: 56px;
     background-color: #FAFAFA;
     display: flex;
     align-items: center;
 }
 
-.primeiro-sidebar img {
+.user img {
     width: 56px;
     height: 56px;
     border-radius: 28px;
@@ -191,7 +183,7 @@ h2 {
     color: #8E8E8E;
 }
 
-.sep {
+.titleSuggestions {
     background-color: #FAFAFA;
     display: flex;
     justify-content: space-between;
@@ -199,40 +191,40 @@ h2 {
     margin-bottom: 17px;
 }
 
-.sep p:last-child {
+.titleSuggestions p:last-child {
     font-weight: 500;
 }
 
-.sep p:first-child {
+.titleSuggestions p:first-child {
     color: #8E8E8E;
 }
 
-.sugestoes img {
+.suggestions img {
     width: 32px;
     height: 32px;
     border-radius: 16px;
 }
 
-.seguidores {
+.followers {
     margin-left: 11px;
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
 
-.seguidores h2 {
+.followers h2 {
     height: 14px;
 }
 
-.seguidores p {
+.followers p {
     height: 11px;
 }
 
-.sugestoes p {
+.suggestions p {
     color: #8E8E8E;
 }
 
-.sugestao {
+.suggestion {
     height: 32px;
     background-color: #FAFAFA;
     display: flex;
@@ -241,7 +233,7 @@ h2 {
     margin-bottom: 17px;
 }
 
-.flex {
+.displayFlex {
     display: flex;
     align-items: center;
 }
@@ -253,7 +245,7 @@ h3 {
     color: #139EF2;
 }
 
-.direitos {
+.copyright {
     height: 74px;
     background-color: #FAFAFA;
     display: flex;
@@ -273,7 +265,11 @@ h4 {
     margin-bottom: 33px;
 }
 
-.publicacao {
+.posts {
+    padding-bottom: 5px;
+}
+
+.post {
     width: 614px;
     background-color: #FFFFFF;
     border: 1px solid #DBDBDB;
@@ -281,23 +277,23 @@ h4 {
     margin-bottom: 60px;
 }
 
-.publicacao:last-child {
+.post:last-child {
     margin-bottom: 0px;
 }
 
-.logo-publi {
+.logoUser {
     display: flex;
     align-items: center;
 }
 
-.logo-publi img {
+.logoUser img {
     width: 32px;
     height: 32px;
     border-radius: 16px;
     margin-right: 15px;
 }
 
-.topo-publi {
+.headerPost {
     height: 60px;
     width: 100%;
     background-color: #FFFFFF;
@@ -307,15 +303,15 @@ h4 {
     padding: 0 17px;
 }
 
-.topo-publi ion-icon {
+.headerPost ion-icon {
     font-size: 16px;
 }
 
-.img-principal {
+.imgPost {
     width: 612px;
 }
 
-.icones-3 {
+.boxInfosIcons {
     width: 92px;
     background-color: #FFFFFF;
     display: flex;
@@ -323,7 +319,7 @@ h4 {
     align-items: center;
 }
 
-.borda {
+.containerInfosIcons {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -331,7 +327,7 @@ h4 {
     padding: 0 15px;
 }
 
-.curtido img {
+.likes img {
     width: 20px;
     height: 20px;
     border-radius: 10px;
@@ -342,14 +338,14 @@ strong {
     font-weight: bold;
 }
 
-.curtido {
+.likes {
     display: flex;
     align-items: center;
     background-color: #FFFFFF;
     padding-left: 17px;
 }
 
-.comentarios {
+.comments {
     width: 100%;
     background-color: #FFFFFF;
     display: flex;
@@ -357,12 +353,12 @@ strong {
     padding: 0 17px;
 }
 
-.comentarios ion-icon {
+.comments ion-icon {
     font-size: 16px;
     margin-left: 20px;
 }
 
-.fundo {
+.infosPost {
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
@@ -370,25 +366,25 @@ strong {
     padding: 13px 0;
 }
 
-.digite-aqui {
+.commentInput {
     background-color: #FFFFFF;
     display: flex;
     padding: 0 17px;
 }
 
-.digite-aqui input {
+.commentInput input {
     width: 100%;
     border: none;
     outline: none;
     color: black;
 }
 
-.digite-aqui ion-icon {
+.commentInput ion-icon {
     font-size: 22px;
     margin-right: 14px;
 }
 
-.publicar {
+.publish {
     color: #B2DFFC;
     display: flex;
     align-items: center;
@@ -396,13 +392,13 @@ strong {
     margin-left: 20px;
 }
 
-.publicar:hover {
+.publish:hover {
     color: #0095F6;
     transition: 300ms;
     cursor: pointer;
 }
 
-.container-stories ion-icon {
+.containerStories ion-icon {
     font-size: 26px;
     position: absolute;
     right: 0;
@@ -412,20 +408,20 @@ strong {
     filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .7))
 }
 
-.logo-mobile {
+.logoMobile {
     display: none;
 }
 
-.borda-mobile {
+footer {
     display: none;
 }
 
 @media (max-width: 935px) {
-    .sidebar {
+    aside {
         display: none;
     }
 
-    .topo {
+    .boxHeader {
         width: 100%;
         margin-left: 0;
         top: 0;
@@ -433,7 +429,7 @@ strong {
         justify-content: space-between;
     }
 
-    .conteudo {
+    .content {
         width: 100%;
         justify-content: center;
     }
@@ -442,7 +438,7 @@ strong {
         margin-left: 20px;
     }
 
-    .icones {
+    .icons {
         margin-right: 20px;
     }
 }
@@ -452,46 +448,46 @@ strong {
         width: auto;
     }
 
-    .logo-mobile {
+    .logoMobile {
         margin-top: 10px;
     }
 
-    .separacao {
+    .bar {
         display: none;
     }
 
-    .pesquisar {
+    .search {
         display: none;
     }
 
-    .icones ion-icon {
+    .icons ion-icon {
         display: none;
     }
 
-    .icones ion-icon:first-child {
+    .icons ion-icon:first-child {
         display: block;
     }
 
-    .icones {
+    .icons {
         width: auto;
     }
 
-    .logo-desk {
+    .logoDesktop {
         display: none;
     }
 
-    .logo-mobile {
+    .logoMobile {
         display: block;
         width: 103px;
         height: 29px;
         background-color: #FFFFFF;
     }
 
-    .container-stories ion-icon {
+    .containerStories ion-icon {
         display: none;
     }
 
-    .container-stories {
+    .containerStories {
         width: 100%;
         margin-top: 54px;
         margin-bottom: 0;
@@ -500,11 +496,15 @@ strong {
         background-color: #FAFAFA;
     }
 
-    .box-stories {
+    .boxStorie {
         background-color: #FAFAFA;
     }
 
-    .publicacao {
+    .posts {
+        padding-bottom: 0px;
+    }
+
+    .post {
         width: 100%;
         height: auto;
         border-right: none;
@@ -512,16 +512,16 @@ strong {
         border-radius: 0;
     }
 
-    .img-principal {
+    .imgPost {
         width: 100%;
         height: auto;
     }
 
-    .conteudo-principal {
+    main {
         width: 100%;
     }
 
-    .borda-mobile {
+    footer {
         width: 100%;
         height: 54px;
         display: flex;
@@ -535,15 +535,15 @@ strong {
         border-top: 1px solid #DBDBDB;
     }
 
-    .borda-mobile ion-icon:first-child {
+    footer ion-icon:first-child {
         margin-left: 20px;
     }
 
-    .borda-mobile ion-icon:last-child {
+    footer ion-icon:last-child {
         margin-right: 20px;
     }
 
-    .publicacao:last-child {
+    .post:last-child {
         margin-bottom: 54px;
     }
 }
