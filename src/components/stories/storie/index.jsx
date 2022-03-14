@@ -1,3 +1,5 @@
+import './style.css';
+
 export const Storie = ({ img, name }) => {
     return (
         <div className="boxStorie">

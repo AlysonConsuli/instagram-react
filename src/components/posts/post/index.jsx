@@ -1,5 +1,6 @@
-import { HeaderPost } from './HeaderPost';
-import { InfosPost } from './InfosPost';
+import './style.css'
+import { HeaderPost } from './headerPost/index';
+import { InfosPost } from './infosPost/index';
 
 export const Post = ({ usrImg, usr, img, firstLikeImg, firstLikeUsr, likesNumber,
     usrComment1, comment1, usrComment2, comment2 }) => {

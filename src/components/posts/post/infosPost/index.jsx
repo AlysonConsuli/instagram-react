@@ -1,4 +1,6 @@
-export const InfosPost = ({ firstLikeImg, firstLikeUsr, likesNumber, 
+import './style.css'
+
+export const InfosPost = ({ firstLikeImg, firstLikeUsr, likesNumber,
     usrComment1, comment1, usrComment2, comment2 }) => {
     return (
         <div className="infosPost">

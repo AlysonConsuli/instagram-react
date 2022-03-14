@@ -1,0 +1,21 @@
+.user {
+    height: 56px;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+}
+
+.margin-17 {
+    margin-left: 17px;
+}
+
+.weight-300 {
+    font-weight: 300;
+    color: #8E8E8E;
+}

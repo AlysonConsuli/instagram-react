@@ -1,4 +1,5 @@
-import { Post } from './Post';
+import './style.css'
+import { Post } from './post/index';
 
 export const Posts = () => {
     const posts = [

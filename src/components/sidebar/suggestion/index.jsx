@@ -1,3 +1,5 @@
+import './style.css'
+
 export const Suggestion = ({ img, name }) => {
     return (
         <div className="suggestion">

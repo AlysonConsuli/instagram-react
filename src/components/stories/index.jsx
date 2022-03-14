@@ -1,4 +1,5 @@
-import { Storie } from './Storie';
+import './style.css'
+import { Storie } from './storie/index';
 
 const stories = [{ img: "img/9gag.png", name: "9gag" }, { img: "img/dota2.jpg", name: "Dota 2" },
 { img: "img/valorant.png", name: "Valorant" }, { img: "img/driven.png", name: "Driven" },

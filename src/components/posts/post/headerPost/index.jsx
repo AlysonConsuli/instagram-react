@@ -1,3 +1,5 @@
+import './style.css'
+
 export const HeaderPost = ({ usrImg, usr }) => {
     return (
         <div className="headerPost">

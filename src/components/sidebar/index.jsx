@@ -1,5 +1,6 @@
-import { User } from "./User"
-import { Suggestion } from "./Suggestion"
+import './style.css'
+import { User } from "./user/index"
+import { Suggestion } from "./suggestion/index"
 
 export const Sidebar = () => {
     const user = { img: "img/eu.jpeg", nickname: "alysonconsuli", name: "Alyson" }
