@@ -3,7 +3,6 @@ import { Suggestion } from "./Suggestion"
 
 export const Sidebar = () => {
     const user = { img: "img/eu.jpeg", nickname: "alysonconsuli", name: "Alyson" }
-    const { img: imgUser, nickname, name: nameUser } = user
     const suggestions = [
         { img: "img/pior.jpg", name: "seficarputoepior" },
         { img: "img/xbox.png", name: "Xbox" },
@@ -14,16 +13,13 @@ export const Sidebar = () => {
 
     return (
         <aside>
-            <User img={imgUser} nickname={nickname} name={nameUser} />
+            <User {...user} />
             <div className="titleSuggestions">
                 <p>Sugestões para você</p>
                 <p>Ver tudo</p>
             </div>
             <div className="suggestions">
-                {suggestions.map(suggestion => {
-                    const { img, name } = suggestion
-                    return <Suggestion img={img} name={name} />
-                })}
+                {suggestions.map(suggestion => <Suggestion {...suggestion} />)}
                 <div className="copyright">
                     <h4>Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade •
                         Termos • Localizações • Contas mais relevantes • Hashtags •

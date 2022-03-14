@@ -1,5 +1,4 @@
-export const Suggestion = (props) => {
-    const { img, name } = props
+export const Suggestion = ({ img, name }) => {
     return (
         <div className="suggestion">
             <div className="displayFlex">

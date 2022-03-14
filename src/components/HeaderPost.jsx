@@ -1,5 +1,4 @@
-export const HeaderPost = (props) => {
-    const { usrImg, usr } = props
+export const HeaderPost = ({ usrImg, usr }) => {
     return (
         <div className="headerPost">
             <div className="logoUser">

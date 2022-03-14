@@ -22,13 +22,7 @@ export const Posts = () => {
     ]
     return (
         <div className="posts">
-            {posts.map(post => {
-                const { usrImg, usr, img, firstLikeImg, firstLikeUsr, likesNumber,
-                    usrComment1, comment1, usrComment2, comment2 } = post
-                return (<Post usrImg={usrImg} usr={usr} img={img} firstLikeImg={firstLikeImg}
-                    firstLikeUsr={firstLikeUsr} likesNumber={likesNumber} usrComment1={usrComment1}
-                    comment1={comment1} usrComment2={usrComment2} comment2={comment2} />)
-            })}
+            {posts.map(post => <Post {...post} />)}
         </div>
     )
 }

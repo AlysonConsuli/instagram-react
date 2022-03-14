@@ -1,5 +1,4 @@
-export const Storie = (props) => {
-    const { img, name } = props
+export const Storie = ({ img, name }) => {
     return (
         <div className="boxStorie">
             <div className="imgStorie">

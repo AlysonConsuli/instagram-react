@@ -1,5 +1,4 @@
-export const User = (props) => {
-    const { img, nickname, name } = props
+export const User = ({ img, nickname, name }) => {
     return (
         <div className="user">
             <img src={img} alt={nickname} />

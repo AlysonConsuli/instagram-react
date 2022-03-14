@@ -1,5 +1,5 @@
-export const InfosPost = (props) => {
-    const { firstLikeImg, firstLikeUsr, likesNumber, usrComment1, comment1, usrComment2, comment2 } = props
+export const InfosPost = ({ firstLikeImg, firstLikeUsr, likesNumber, 
+    usrComment1, comment1, usrComment2, comment2 }) => {
     return (
         <div className="infosPost">
             <div className="containerInfosIcons">
